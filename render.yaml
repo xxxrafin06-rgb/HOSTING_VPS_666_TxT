@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: rafin-txt
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 8 --timeout 120 app:app
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: NORMAL_PASSWORD
+        value: RAFIN_TxT_123
+      - key: BOT_LIFETIME_DAYS
+        value: "30"
+      - key: PYTHON_VERSION
+        value: "3.11.0"

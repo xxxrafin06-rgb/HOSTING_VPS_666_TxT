@@ -1,0 +1,13 @@
+{
+  "servers": {},
+  "users": {},
+  "settings": {
+    "maintenance": false,
+    "maintenance_msg": "System under maintenance.",
+    "theme_color": "#8b5cf6",
+    "normal_password": "RAFIN_TxT_123",
+    "site_name": "RAFIN TxT",
+    "auto_restart_interval": 120,
+    "default_lifetime_days": 30
+  }
+}
